@@ -1,0 +1,53 @@
+.effort {
+
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        padding-left: 0;
+    }
+
+    // &__item {}
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__discription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
