@@ -32,7 +32,6 @@ picture {
 
 .container {
   margin: auto;
-  outline: 1px solid tomato;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
