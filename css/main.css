@@ -32,6 +32,7 @@ picture {
 
 .container {
   margin: auto;
+  outline: 1px solid tomato;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -963,8 +964,8 @@ picture {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .portfolio__title {
   font-weight: 700;
@@ -985,12 +986,11 @@ picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .portfolio__button {
   color: #212121;
@@ -1019,17 +1019,14 @@ picture {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio__works {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding-left: 0;
-  gap: 30px;
+}
+.portfolio__article:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .article {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
 }
 .article__link {
   text-decoration: none;
@@ -1057,7 +1054,7 @@ picture {
 }
 .article__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 .article__footer {
   border-bottom: 1px solid #eeeeee;
@@ -1495,9 +1492,11 @@ picture {
 }
 
 .mobile-media {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

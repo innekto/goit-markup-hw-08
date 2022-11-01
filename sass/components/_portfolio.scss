@@ -1,6 +1,8 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &__title {
         font-weight: 700;
@@ -20,10 +22,12 @@
 
     &__category {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        // justify-content: center;
         padding-left: 0;
         gap: 8px;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     &__button {
@@ -52,17 +56,23 @@
     }
 
     &__works {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         padding-left: 0;
-        gap: 30px;
+        // gap: 30px;
     }
 
-    // &__article {}
+    &__article:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 .article {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    width: 100%;
+
 
     &__link {
         text-decoration: none;
@@ -91,7 +101,7 @@
 
     &__image {
         display: block;
-        max-width: 100%;
+        width: 100%;
     }
 
     &__footer {

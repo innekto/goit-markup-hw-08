@@ -163,9 +163,11 @@
 
 
 .mobile-media {
-display: inline-flex;
+display: flex;
+flex-wrap: wrap;
 align-items: center;
 padding-left:0;
+
 
     // &__item {}
 
