@@ -1,8 +1,12 @@
 .portfolio {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         font-weight: 700;
@@ -26,8 +30,26 @@
         // justify-content: center;
         padding-left: 0;
         gap: 8px;
-        // margin-bottom: 50px;
         margin-bottom: 40px;
+
+        @media screen and (max-width:767px) {
+            width: 326px;
+        }
+
+        @media screen and (min-width:768px) {
+            width: auto;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:1200px) {
+
+            margin-bottom: 50px;
+        }
+
+
+
+
     }
 
     &__button {
@@ -56,22 +78,39 @@
     }
 
     &__works {
-        // display: flex;
-        // flex-wrap: wrap;
+        // 
+        // 
         padding-left: 0;
-        // gap: 30px;
+        // 
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 
-    &__article:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+        &__article:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
+
 
 
 }
 
 .article {
-    // width: calc((100% - 60px) / 3);
-    width: 100%;
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    // width: 100%;
 
 
     &__link {
@@ -109,6 +148,14 @@
         border-right: 1px solid #eeeeee;
         border-left: 1px solid #eeeeee;
         padding: 20px 23px 20px 23px;
+
+
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        &__footer--tablet {
+            padding: 20px 23px 56px 23px;
+        }
     }
 
     &__title {

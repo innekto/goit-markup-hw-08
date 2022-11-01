@@ -1,69 +1,65 @@
- body {
-   font-family: Roboto, Raleway, sans-serif;
-   color: var(--main-text-color);
- }
+body {
+  font-family: Roboto, Raleway, sans-serif;
+  color: var(--main-text-color);
+}
 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p,
- ul {
-   margin-top: 0;
-   margin-bottom: 0;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
- ul {
-   list-style: none;
- }
+ul {
+  list-style: none;
+}
 
- picture {
-   display: flex;
- }
+.img-display {
+  display: block;
+  max-width: 100%;
+}
 
- .img-display {
-   display: block;
-   max-width: 100%;
- }
+.container {
+  margin: auto;
+  outline: 1px solid tomato;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
- .container {
-   margin: auto;
-   outline: 1px solid tomato;
-   max-width: 1200px;
-   padding-left: 15px;
-   padding-right: 15px;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    // overflow: hidden;
+  }
 
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
 
-   @media screen and (max-width:767px) {
-     position: relative;
-     // overflow: hidden;
-   }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
-   @media screen and (min-width:320px) {
-     max-width: 480px;
-   }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
 
-   @media screen and (min-width:768px) {
-     max-width: 768px;
-   }
+@import "./commons";
 
-   @media screen and (min-width:1200px) {
-     max-width: 1200px;
-   }
- }
+@import "./utils/variables";
+@import "./components/pageheader";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/effort";
+@import "./components/ourteam";
+@import "./components/clients";
+@import "./components/pagefooter";
+@import "./components/portfolio";
+@import "./components/backdrop";
 
- @import './commons';
- @import './utils/variables';
- @import './components/pageheader';
- @import './components/hero';
- @import './components/benefits';
- @import './components/effort';
- @import './components/ourteam';
- @import './components/clients';
- @import './components/pagefooter';
- @import './components/portfolio';
- @import './components/backdrop';
-
- @import './components/mobile-menu';
+@import "./components/mobile-menu";

@@ -21,8 +21,14 @@
     <header class="pageheader">
       <div class="pageheader__container container">
         <a href="" class="logo" lang="en">
-          Web<span class="logo__header">Studio</span></a>
-        <button type="button" class="open-menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          Web<span class="logo__header">Studio</span></a
+        >
+        <button
+          type="button"
+          class="open-menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="open-menu-button__icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -31,17 +37,21 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="./index.html" class="nav__studiolink ">Студія</a>
+                <a href="./index.html" class="nav__studiolink">Студія</a>
               </li>
               <li class="nav__item">
-                <a href="./portfolio.html" class="nav__portlink nav__portlink--active">Портфоліо</a>
+                <a
+                  href="./portfolio.html"
+                  class="nav__portlink nav__portlink--active"
+                  >Портфоліо</a
+                >
               </li>
               <li class="nav__item">
                 <a href="" class="nav__contlink">Контакти</a>
               </li>
             </ul>
           </nav>
-    
+
           <ul class="contacts">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -60,42 +70,56 @@
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 <svg class="contacts__tablet-icon" width="10" height="14">
-                  <use href="./images/symbol-defs.svg#icon-smartphone-tablet"></use>
+                  <use
+                    href="./images/symbol-defs.svg#icon-smartphone-tablet"
+                  ></use>
                 </svg>
                 +38 096 111 11 11
               </a>
             </li>
           </ul>
         </div>
-    
+
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-container__close-button js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button
+            class="menu-container__close-button js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="menu-container__icon" width="40" height="40">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-    
+
           <ul class="mobile-nav">
             <li class="mobile-nav__item">
-              <a href="./index.html" class="mobile-nav__studiolink ">Студія</a>
+              <a href="./index.html" class="mobile-nav__studiolink">Студія</a>
             </li>
             <li class="mobile-nav__item">
-              <a href="./portfolio.html" class="mobile-nav__portlink mobile-nav__portlink--active">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="mobile-nav__portlink mobile-nav__portlink--active"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-nav__item">
               <a href="" class="mobile-nav__contlink">Контакти</a>
             </li>
           </ul>
-    
+
           <ul class="mobile-contacts">
             <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="mobile-contacts__tel"
+                >+38 096 111 11 11</a
+              >
             </li>
             <li class="mobile-contacts__item">
-              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-    
+
           <ul class="mobile-media">
             <li class="mobile-media__item">
               <a href="" class="mobile-media__link">Instagram</a>
@@ -156,14 +180,41 @@
                       особу.
                     </p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/technocrack.jpg"
                     alt="оформлення вебсайту"
                     class="article__image"
-                   
-                  />
+                   /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/technocrack-mobile.jpg    1x,
+                        ./images/technocrack-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/technocrack-tablet.jpg    1x,
+                        ./images/technocrack-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/technocrack-desktop.jpg    1x,
+                        ./images/technocrack-desktop@2x.jpg 2x
+                      "
+                      src="./images/technocrack-desktop"
+                      alt="оформлення вебсайту"
+                    />
+                  </picture>
                 </div>
-                <div class="article__footer">
+                <div class="article__footer article__footer--tablet">
                   <h2 class="article__title">Технокряк</h2>
                   <p class="article__text">Веб-сайт</p>
                 </div>
@@ -175,12 +226,39 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/poster.jpg"
                     alt="оформлення постерів"
                     class="article__image"
                     width="370"
-                  />
+                  />  -->
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/poster-mobile.jpg    1x,
+                        ./images/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/poster-tablet.jpg    1x,
+                        ./images/poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/poster-desktop.jpg    1x,
+                        ./images/poster-desktop@2x.jpg 2x
+                      "
+                      src="./images/poster-desktop"
+                      alt="оформлення постерів"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -196,12 +274,39 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/restaurant.jpg"
                     alt="оформлення сайту ресторану"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/restaurant-mobile.jpg    1x,
+                        ./images/restaurant-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/restaurant-tablet.jpg    1x,
+                        ./images/restaurant-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/restaurant-desktop.jpg    1x,
+                        ./images/restaurant-desktop@2x.jpg 2x
+                      "
+                      src="./images/restaurant-desktop"
+                      alt="оформлення сайту ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -217,12 +322,40 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/project-prime.jpg"
                     alt="маркетинг роектів"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-prime-mobile.jpg    1x,
+                        ./images/project-prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-prime-tablet.jpg    1x,
+                        ./images/project-prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/project-prime-desktop.jpg    1x,
+                        ./images/project-prime-desktop@2x.jpg 2x
+                      "
+                      src="./images/project-prime-desktop"
+                      alt="оформлення сайту ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -238,12 +371,40 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/project-boxes.jpg"
                     alt="створення додатків"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-boxes-mobile.jpg    1x,
+                        ./images/project-boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-boxes-tablet.jpg    1x,
+                        ./images/project-boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/project-boxes-desktop.jpg    1x,
+                        ./images/project-boxes-desktop@2x.jpg 2x
+                      "
+                      src="./images/project-boxes-desktop"
+                      alt="оформлення сайту ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -259,12 +420,39 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/inspiration.jpg"
                     alt="оформлення вебсайтів"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/inspiration-mobile.jpg    1x,
+                        ./images/inspiration-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/inspiration-tablet.jpg    1x,
+                        ./images/inspiration-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/inspiration-desktop.jpg    1x,
+                        ./images/inspiration-desktop@2x.jpg 2x
+                      "
+                      src="./images/inspiration-desktop"
+                      alt="оформлення сайту ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title" lang="en">
@@ -280,12 +468,40 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/vydannya.jpg"
                     alt="дизайн видань"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/vydannya-mobile.jpg    1x,
+                        ./images/vydannya-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/vydannya-tablet.jpg    1x,
+                        ./images/vydannya-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/vydannya-desktop.jpg    1x,
+                        ./images/vydannya-desktop@2x.jpg 2x
+                      "
+                      src="./images/vydannya-desktop"
+                      alt="оформлення сайту ресторану"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -301,12 +517,40 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/project-lab.jpg"
                     alt="маркетинг"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-lab-mobile.jpg    1x,
+                        ./images/project-lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/project-lab-tablet.jpg    1x,
+                        ./images/project-lab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/project-lab-desktop.jpg    1x,
+                        ./images/project-lab-desktop@2x.jpg 2x
+                      "
+                      src="./images/project-lab-desktop"
+                      alt="маркетинг"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title">
@@ -322,12 +566,40 @@
                   <div class="shutter">
                     <p class="shutter__discription"></p>
                   </div>
-                  <img
+                  <!-- <img
                     src="./images/growing-business.jpg"
                     alt="дизайн додатку"
                     class="article__image"
                     width="370"
-                  />
+                  /> -->
+
+                  <picture>
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/growing-business-mobile.jpg    1x,
+                        ./images/growing-business-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      class="article__image"
+                      srcset="
+                        ./images/growing-business-tablet.jpg    1x,
+                        ./images/growing-business-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px) and (max-width:1199px)"
+                    />
+                    <img
+                      class="article__image"
+                      srcset="
+                        ./images/growing-business-desktop.jpg    1x,
+                        ./images/growing-business-desktop@2x.jpg 2x
+                      "
+                      src="./images/growing-business-desktop"
+                      alt="дизайн додатку"
+                    />
+                  </picture>
                 </div>
                 <div class="article__footer">
                   <h2 class="article__title" lang="en">Growing Business</h2>
@@ -344,13 +616,15 @@
         <div class="wrapper">
           <div class="tablet-footer">
             <div class="navigation">
-              <a href="" class="logo" lang="en">
+              <a href="" class="logo logo--bottom" lang="en">
                 Web<span class="logo__footer">Studio</span>
               </a>
               <address class="adress">
                 <ul class="adress__list">
                   <li class="adress__item">
-                    <span class="adress__text">м. Київ, пр-т Лесі Українки, 26</span>
+                    <span class="adress__text"
+                      >м. Київ, пр-т Лесі Українки, 26</span
+                    >
                   </li>
                   <li class="adress__item">
                     <a href="mailto:info@devstudio.com" class="adress__contact">
@@ -358,12 +632,14 @@
                     </a>
                   </li>
                   <li class="adress__item">
-                    <a href="tel:+380961111111" class="adress__contact">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="adress__contact"
+                      >+38 096 111 11 11</a
+                    >
                   </li>
                 </ul>
               </address>
             </div>
-    
+
             <div class="webs">
               <h3 class="webs__title">приєднуйтесь</h3>
               <ul class="webs__list">
@@ -398,11 +674,18 @@
               </ul>
             </div>
           </div>
-    
+
           <form class="form" autocomplete="off">
             <div class="field">
-              <label for="email" class="form__label">Підпишіться на розсилку</label>
-              <input type="email" class="form__input" id="email" placeholder="E-mail" />
+              <label for="email" class="form__label"
+                >Підпишіться на розсилку</label
+              >
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="E-mail"
+              />
             </div>
             <button class="form__sendbutton sendbutton" type="submit">
               <span class="sendbutton__text">Підписатися</span>
