@@ -1,17 +1,18 @@
 .pageheader {
 	background-color: $white-color;
-	border-bottom-color: #ececec;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+	// border-bottom-color: #ececec;
+	// border-bottom-width: 1px;
+	// border-bottom-style: solid;
+
 	max-width: 480px;
 	margin: auto;
-
+border-bottom:1px solid #ececec;
 	@media screen and (min-width:768px) {
 		max-width: 768px;
 	}
 
 	@media screen and (min-width:1200px) {
-		max-width: 1200px;
+		max-width: 1600px;
 	}
 
 	&__container {

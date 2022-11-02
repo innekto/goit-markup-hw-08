@@ -53,11 +53,9 @@ ul {
 
 .pageheader {
   background-color: #ffffff;
-  border-bottom-color: #ececec;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
   max-width: 480px;
   margin: auto;
+  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .pageheader {
@@ -66,7 +64,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .pageheader {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 .pageheader__container {
@@ -318,7 +316,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
@@ -451,6 +449,11 @@ ul {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .item-about__title {
+    text-align: center;
+  }
+}
 .item-about__discription {
   font-weight: 400;
   color: #757575;
@@ -541,11 +544,17 @@ ul {
   }
 }
 .ourteam__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .ourteam__list {
   padding-left: 0;
@@ -659,6 +668,12 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .clients__list {
   margin: 0;
@@ -938,6 +953,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .form__input {
+    width: 358px;
     margin: 0;
   }
 }
@@ -955,6 +971,13 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .field {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
